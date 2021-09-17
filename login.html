@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bincom Polling System</title>
+	<link href="css/user_styles.css" rel="stylesheet" type="text/css" />
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script language="JavaScript" src="js/user.js"></script>
+</head>
+<body bgcolor="tan">
+<center><b><font color = "brown" size="6">Bincom Polling System</font></b></center>
+<div id="page">
+	<div id="header">
+		<h1>Student Login</h1><hr/>
+	</div>
+	<div id="container">
+		<form name="form1" method="post" action="checklogin.php" onsubmit="return loginValidate(this)">
+	<div class="form-group">
+		<label for="email">Email address:</label>
+		<input type="email" name="myusername" class="form-control" id="myusername">
+	</div>
+	<div class="form-group">
+		<label for="pwd">Password:</label>
+		<input type="password" name="mypassword" class="form-control" id="mypassword">
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox"> Remember me</label>
+	</div>
+		<button type="submit" name="Submit" class="btn btn-default">Login</button>
+		</form>
+<center>
+	<br>Not yet registered? <a href="registeracc.php"><b>Register Here</b></a>
+</center>
+	</div>
+	<div id="footer">
+		<div class="bottom_addr">Sourcecodester &copy; @2016</div>
+	</div>
+</div>
+</body>
+</html>
